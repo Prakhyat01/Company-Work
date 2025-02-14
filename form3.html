@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+    <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: rgb(217, 229, 220);
+    }
+    .numberCircle {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    padding: 2px 7px;
+
+    background: rgb(9, 170, 81);
+    /* border: 2px solid white; */
+    color: white;
+    text-align: center;
+
+   /* font: 10px;     Arial, sans-serif; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+form{
+    border:1px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: left;
+}
+button{
+    color:white;
+    background-color: rgb(9, 170, 81);
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding-left: 130px;
+    padding-right: 140px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* border-color:  rgb(9, 170, 81); */
+    border: none;
+}
+input{
+    background-color:rgb(217, 229, 220) ;
+    border-radius: 3px;
+    /* border-color: rgb(217, 229, 220) ; */
+    border: none;
+    /* margin-top: 5px; */
+    
+}
+textarea{
+     background-color:rgb(217, 229, 220) ;
+     border-color: rgb(217, 229, 220);
+     min-width: 420px;
+     min-height: 20px;
+     
+}
+select{
+     background-color:rgb(217, 229, 220) ;
+     border-color: rgb(217, 229, 220);
+}
+.btnsize{
+    width: 420px;
+    padding: 5px;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1>Appointment Request Form</h1>
+    <h4>Make your appointments more easier</h4>
+    <div class="container">
+    <form action="">
+        <h4><span class="numberCircle">1</span> Your Basic details</h4>
+        Name*: <br>
+        <input class="btnsize" type="text" placeholder="only first name"><br><br>
+
+        Email*: <br>
+        <input class="btnsize" type="text" placeholder="abc@xyz.com"><br><br>
+
+        Contact Num: <br>
+        <input class="btnsize" type="number" placeholder="Include country code"><br><br>
+
+        Skype username: <br>
+        <input class="btnsize" type="text" placeholder="@abchkfd"> <br><br>
+
+        <h4><span class="numberCircle">2</span> Appointment Details</h4>
+        Appointment For*: <br>
+        <select class="btnsize  " name="Appointment" id="Appointment">
+            <option value="coffee">Coffee</option>
+            <option value="meeting">Meeting</option>
+            <option value="business deal">Business Deal</option>
+            <option value="meetup">Normal meetup</option>
+        </select><br><br>
+        Appointment Description: <br>
+        <textarea class="btnsize" name="text" id="text">
+            I wish to get an appointment to skype for resolving a software problem.
+            </textarea> <br><br>
+
+        Date*: <br>
+        <input class="btnsize" type="date"> <br><br>
+
+        Time*: <br>
+        <input class="btnsize" type="time"> <br><br>
+
+        How Long??(Minutes) <br>
+        <input type="radio" name="btn">
+        30
+        <input type="radio" name="btn">
+        60
+        <input type="radio" name="btn">
+        90
+        <input type="radio" name="btn">
+        more
+        <br>
+        <button>Request For Appointment</button>
+    </form>
+    </div>
+</body>
+</html>
